@@ -83,7 +83,7 @@ RUN addgroup -g 1001 -S nodejs && \
 
 # Copy package files and install production dependencies
 COPY package*.json ./
-RUN npm ci --only=production --legacy-peer-deps && \
+RUN npm ci --omit=dev --legacy-peer-deps && \
     npm cache clean --force
 
 # Copy built application from builder stage
