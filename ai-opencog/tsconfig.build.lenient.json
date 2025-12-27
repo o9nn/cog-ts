@@ -1,0 +1,36 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "strict": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitThis": false,
+    "declaration": true,
+    "declarationMap": false,
+    "sourceMap": false,
+    "composite": false,
+    "lib": [
+      "ES2022"
+    ],
+    "target": "ES2022",
+    "module": "commonjs",
+    "maxNodeModuleJsDepth": 0,
+    "noEmitOnError": false,
+    "emitDeclarationOnly": false,
+    "types": []
+  },
+  "include": [
+    "src/common/**/*",
+    "src/node/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "src/browser/**/*",
+    "src/test/**/*"
+  ]
+}
