@@ -157,8 +157,7 @@ Dockerfile*
 .travis.yml
 .circleci/
 
-# Package files not needed in runtime
-package-lock.json
+# Package files not needed in runtime (keep package-lock.json for npm ci)
 yarn.lock
 
 # Temporary files
